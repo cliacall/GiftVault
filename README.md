@@ -1,18 +1,10 @@
 # GiftVault
 
-X账号礼物金库 — 指定X/Twitter账号作为礼物所有者，控制交易手续费定向到任意EVM地址，7天宽限期
+X账号礼物金库 — 指定X/Twitter账号控制手续费定向到任意EVM地址，7天宽限期
 
-## OpenFour Module
+## OpenFour 模块
 
-- **类型**: Vault (IOpenFourVault)
-- **标签**: `module.vault.gift`
-- **Solidity**: ^0.8.20
-- **依赖**: OpenZeppelin Contracts
-
-## 功能
-
-本合约是 [Flap.sh CA Store](https://flap.sh/bnb/CAstore) 同名 Vault 的 OpenFour 翻版，
-可直接集成到 [four.meme](https://four.meme) OpenFour 发射引擎中。
+直接集成到 four.meme OpenFour 发射引擎中。
 
 ## 合约架构
 
@@ -20,19 +12,13 @@ X账号礼物金库 — 指定X/Twitter账号作为礼物所有者，控制交�
 contracts/
 ├── GiftVault.sol              # 主合约
 ├── interfaces/
-│   ├── IOpenFourVault.sol               # OpenFour Vault 接口
-│   ├── ITagDescriptor.sol    # 模块标签接口
+│   ├── IOpenFourVault.sol   # OpenFour Vault 接口
+│   ├── ITagDescriptor.sol   # 模块标签接口
 │   └── IOpenFourModuleSchema.sol  # 前端表单Schema接口
 ```
 
-## 部署到 four.meme
+## 部署
 
 1. 访问 https://four.meme/zh-TW/contract/create
-2. 上传 `contracts/GiftVault.sol`
-3. 填写合约信息并提交审核
-
-## 参考
-
-- Flap CA Store: https://flap.sh/bnb/CAstore
-- Four.Meme: https://four.meme
-- OpenFour 文档: https://four.meme/docs
+2. 上传合约文件
+3. 填写信息并提交审核
